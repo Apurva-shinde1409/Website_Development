@@ -1,0 +1,348 @@
+/* Reset Default Margins and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Style */
+body {
+    background-color: #e6f7ff; /* Light blue background */
+    color: #333; /* Default text color for readability */
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+/* Links */
+a {
+    color: #0077be;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+
+/* Container for Consistent Layout */
+.container {
+    width: 90%; /* Relative to the viewport width */
+    max-width: 1200px; /* Add a maximum width limit */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Default for larger screens */
+body {
+    font-size: 16px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+
+/* Full-Width Header */
+.full-width-header {
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Small Header */
+.small-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px; /* Restrict content width */
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+/* Logo and Text */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #263479;
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between search bar and social icons */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.search-bar button {
+    background: #0077be;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.social-icons a:hover {
+    color: #0077be;
+}
+
+.main-header {
+    background: #263479;
+    padding: 10px 0;
+    color: white;
+}
+
+.main-header .menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header .menu li {
+    cursor: pointer;
+}
+
+/* Hero Section Styling */
+.hero {
+    width: 80%; /* Reduce the width to 80% of the page */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px 0; /* Add vertical padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out text and image */
+    background: #f4f4f4; /* Optional: Background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure spacing between text and image */
+    width: 100%; /* Ensure the content spans the section */
+    gap: 20px; /* Add space between the elements */
+}
+
+/* Text Content */
+.hero-text {
+    flex: 1; /* Make the text take up equal space */
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    color: #0077be;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background: #0077be;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    background: #005ba1;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Image Content */
+.hero-image {
+    flex: 1; /* Make the image take up equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%; /* Ensure image responsiveness */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Centered Image */
+.hero-image-center {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buoy-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buoy-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(50, 47, 47, 0.3);
+}
+
+
+.news {
+    background: #e6f7ff; /* Light blue background */
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.news h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0077be;
+    margin-bottom: 30px;
+}
+
+.news-items {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-article {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.news-article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-article img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-article p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.news-article .btn {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    background: #0077be;
+    color: white;
+    border-radius: 5px;
+}
+
+.news-article .btn:hover {
+    background: #005ba1;
+}
+
+footer {
+    background: #001f4d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
